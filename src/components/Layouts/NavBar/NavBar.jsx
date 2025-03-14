@@ -1,7 +1,11 @@
+ import { ItemNavBarHeader } from "../../UI/ItemNavBar/ItemNavBarHeader/ItemNavBarHeader"
+
 export const NavBar = () => {
     return(
         <nav>
-            <ul></ul>
+            <ul>
+                <ItemNavBarHeader />
+            </ul>
         </nav>
     )
 }
