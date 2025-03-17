@@ -1,11 +1,12 @@
- import { ItemNavBarHeader } from "../../UI/ItemNavBar/ItemNavBarHeader/ItemNavBarHeader"
+import { ItemNavBarHeader } from "../../UI/ItemNavBar/ItemNavBarHeader/ItemNavBarHeader"
+import './NavBar.css'
 
 export const NavBar = () => {
-    return(
-        <nav>
-            <ul>
-                <ItemNavBarHeader />
-            </ul>
-        </nav>
-    )
+   return(
+       <nav className="header-nav">
+           <ul className="nav-menu">
+               <ItemNavBarHeader />
+           </ul>
+       </nav>
+   )
 }
