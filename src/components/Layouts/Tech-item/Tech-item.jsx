@@ -6,3 +6,4 @@ export const TechItem = ({text = 'React', srce = '../src/assets/images/iconos/re
         </div>
     )
 }
+
