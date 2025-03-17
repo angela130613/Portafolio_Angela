@@ -28,3 +28,252 @@ body {
   align-items: center;
 }
 
+/* Navegación */
+
+header {
+  width: 100%;
+  background-color: #9c27b0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+/* Contenedor principal */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 30px;
+  display: flex;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(156, 39, 176, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Foto de perfil */
+.profile-photo {
+  flex: 0 0 35%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-image {
+  width: 100%;
+  height: auto;
+  max-height: 350px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 0px 2rem  #bd23ff;
+}
+
+/* Información del perfil */
+.profile-info {
+  flex: 0 0 65%;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.greeting {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #9c27b0;
+}
+
+.name {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #6a1b9a;
+  word-wrap: break-word;
+  text-shadow: 0px 0px 9px #bd23ff;
+}
+
+.bio {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  color: #555;
+  word-wrap: break-word;
+}
+
+/* Footer y redes sociales */
+footer {
+  width: 100%;
+  background-color: #f3e5f5;
+  padding: 20px 0;
+  margin-top: auto;
+  border-top: 1px solid #e1bee7;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .social-links li {
+            margin: 0 15px;
+        }
+
+        .social-links a {
+            color: #9c27b0;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .social-links a:hover {
+            color: #e91e63;
+        }
+
+        .social-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #e91e63;
+            transition: width 0.3s ease;
+        }
+
+        .social-links a:hover::after {
+            width: 100%;
+        }
+
+.social-links {
+  display: flex;
+  list-style: none;
+}
+
+.social-links li {
+  margin: 0 15px;
+}
+
+.social-links a {
+  color: #9c27b0;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.social-links a:hover {
+  color: #e91e63;
+}
+
+.social-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #e91e63;
+  transition: width 0.3s ease;
+}
+
+.social-links a:hover::after {
+  width: 100%;
+}
+
+.title {
+  margin: 10px;
+  color: #b680ff;
+  font-size: 3rem;
+  text-align: center;
+  padding: 10px 40px;
+  border: 3px solid #8a2be2;
+  border-radius: 15px;
+  background-color: rgba(138, 43, 226, 0.1);
+  box-shadow: 0 0 15px rgba(138, 43, 226, 0.5);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.tech-grid {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+  width: 100%;
+  max-width: 1000px;
+  padding: 20px;
+  border-radius: 20px;
+  border: 3px solid #8a2be2;
+  background-color: rgba(138, 43, 226, 0.05);
+}
+
+.tech-item {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background-color: rgba(50, 10, 90, 0.8);
+  border-radius: 12px;
+  border: 2px solid #9d4edd;
+  transition: all 0.3s ease;
+}
+
+.tech-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(157, 78, 221, 0.6);
+  border-color: #c77dff;
+}
+
+.tech-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.tech-name {
+  color: #e0b0ff;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 15px;
+  }
+  
+  .profile-photo, .profile-info {
+    flex: 0 0 100%;
+  }
+  
+  .greeting {
+    font-size: 2rem;
+  }
+  
+  .name {
+    font-size: 1.8rem;
+  }
+
+  .tech-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .title {
+    font-size: 2rem;
+  }
+  
+}
