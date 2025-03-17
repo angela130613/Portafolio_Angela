@@ -1,4 +1,4 @@
-export const TechItem = ({text = 'React', srce = '../src/assets/images/iconos/react.png' }) => {
+export const TechItem = ({text = 'React', srce = 'src/assets/icon/react.png' }) => {
     return(
         <div class="tech-item">
           <img class="tech-icon" src={srce} alt={text} />

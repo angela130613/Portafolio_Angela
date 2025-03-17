@@ -12,21 +12,21 @@ export const Profile = () => {
 
         <TechItem />
 
-        <TechItem text='Java' srce='../src/assets/images/iconos/java.png'  />
+        <TechItem text='Java' srce='src/assets/icon/java.png'  />
 
-        <TechItem text='Oracle' srce='../src/assets/images/iconos/oracle.png'/>
+        <TechItem text='Oracle' srce='src/assets/icon/oracle.png'/>
 
-        <TechItem text='Node' srce='../src/assets/images/iconos/node.png'/>
+        <TechItem text='Node' srce='src/assets/icon/node.png'/>
 
-        <TechItem text='mongo' srce='../src/assets/images/iconos/mongp.png'/>
+        <TechItem text='mongo' srce='src/assets/icon/mongp.png'/>
 
-        <TechItem text='javaScript' srce='../src/assets/images/iconos/javaScript.png'/>
+        <TechItem text='javaScript' srce='src/assets/icon/JavaScript.png'/>
 
-        <TechItem text='figma' srce='../src/assets/images/iconos/figma.png'/>
+        <TechItem text='figma' srce='src/assets/icon/figma.png'/>
 
-        <TechItem text='css' srce='../src/assets/images/iconos/css.png'/>
+        <TechItem text='css' srce='src/assets/icon/css.png'/>
 
-        <TechItem text='html' srce='../src/assets/images/iconos/html.png'/>
+        <TechItem text='html' srce='src/assets/icon/html.png'/>
 
       </div>
 
