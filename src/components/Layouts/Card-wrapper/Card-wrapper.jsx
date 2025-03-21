@@ -18,7 +18,15 @@ export const Card_wrapper = ({image = '../src/assets/images/logo.jpeg', tile ='T
             <div className="flip-icon">↻</div>
             </div>
         </div>
-       
+        <div className="card-face card-back">
+            <div className="card-decoration decoration-1"></div>
+            <div className="card-decoration decoration-2"></div>
+            <h3 className="card-title">{tile}</h3>
+            <p className="card-description">
+            {descrip}
+            </p>
+            <a href={enlace} className="card-link">Explorar</a>
+        </div>
         </div>
     </div>
     )
